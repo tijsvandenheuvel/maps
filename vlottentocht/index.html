@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta http-equiv="content-type" content="text/html" charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="shortcut icon" href="#">
+		<title>Document</title>
+
+		<script>
+			L_NO_TOUCH = false;
+			L_DISABLE_3D = false;
+		</script>
+
+		<style>
+			html,
+			body {
+				width: 100%;
+				height: 100%;
+				margin: 0;
+				padding: 0;
+			}
+			#map {
+				position: absolute;
+				top: 0;
+				bottom: 0;
+				right: 0;
+				left: 0;
+			}
+		</style>
+
+		<script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+		<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"
+		/>
+
+		<meta
+			name="viewport"
+			content="width=device-width,
+        initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+		/>
+		<style>
+			#map_123 {
+				position: relative;
+				width: 100%;
+				height: 96%;
+				left: 0%;
+				top: 0%;
+			}
+		</style>
+	</head>
+	<body>
+            <input type="checkbox" id="semois" name="data0" checked="checked" autocomplete="off">
+            <label for="data0"> semois</label>
+            <input type="checkbox" id="campings" name="data1" autocomplete="off">
+            <label for="data1"> campings</label>
+            <input type="checkbox" id="stations" name="data2" autocomplete="off">
+            <label for="data2"> stations</label>
+            <input type="checkbox" id="dorpen" name="data3" autocomplete="off">
+            <label for="data3"> dorpen</label>
+            <button onclick="handleForm()">Map</button>
+		<div class="folium-map" id="map_123"></div>
+	</body>
+</html>
+
+<script src="support.js"></script>
+<script src="setup.js"></script>
+<script src="script.js"></script>

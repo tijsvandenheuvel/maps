@@ -1,0 +1,357 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+      {
+        "type": "Feature",
+        "properties": {
+          "marker-color": "#7e7e7e",
+          "marker-size": "medium",
+          "marker-symbol": "",
+          "name": "Camping Moulin Williame"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            5.232667922973633,
+            49.773476709987754
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "marker-color": "#7e7e7e",
+          "marker-size": "medium",
+          "marker-symbol": "",
+          "name": "Camping La Garenne"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            5.2312517166137695,
+            49.786639646622234
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "marker-color": "#7e7e7e",
+          "marker-size": "medium",
+          "marker-symbol": "",
+          "name": "Camping Cote d'Aise"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            5.216360092163086,
+            49.80265203927615
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "marker-color": "#7e7e7e",
+          "marker-size": "medium",
+          "marker-symbol": "",
+          "name": "Camping Les Ochay"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            5.214600563049316,
+            49.80500635636719
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "marker-color": "#7e7e7e",
+          "marker-size": "medium",
+          "marker-symbol": "",
+          "name": "Camping La Charbonnière"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            5.206103324890137,
+            49.8014332889854
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "marker-color": "#7e7e7e",
+          "marker-size": "medium",
+          "marker-symbol": "",
+          "name": "Camping Le Blanc Caillou"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            5.201146602630615,
+            49.7990372472672
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "marker-color": "#7e7e7e",
+          "marker-size": "medium",
+          "marker-symbol": "",
+          "name": "Camping Saint-Remacle"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            5.204193592071533,
+            49.810407004144075
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "marker-color": "#7e7e7e",
+          "marker-size": "medium",
+          "marker-symbol": "",
+          "name": "Camping Maka"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            5.166149139404297,
+            49.80824681733993
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "marker-color": "#7e7e7e",
+          "marker-size": "medium",
+          "marker-symbol": "",
+          "name": "Camping Halliru"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            5.047123432159424,
+            49.792277831651596
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "marker-color": "#7e7e7e",
+          "marker-size": "medium",
+          "marker-symbol": "",
+          "name": "Camping Ile de Faigneul"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            5.0160956382751465,
+            49.81625010326171
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "marker-color": "#7e7e7e",
+          "marker-size": "medium",
+          "marker-symbol": "",
+          "name": "Camping d'Houlifontaine"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            4.993371963500977,
+            49.820611198462345
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "marker-color": "#7e7e7e",
+          "marker-size": "medium",
+          "marker-symbol": "",
+          "name": "Camping du Ban de Laviot"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            4.985861778259277,
+            49.826217743311005
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "marker-color": "#7e7e7e",
+          "marker-size": "medium",
+          "marker-symbol": "",
+          "name": "Camping le Saggitaire"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            4.984595775604248,
+            49.829622883000184
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "marker-color": "#7e7e7e",
+          "marker-size": "medium",
+          "marker-symbol": "",
+          "name": "Camping de la Vallee"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            4.98551845550537,
+            49.83384436969596
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "marker-color": "#7e7e7e",
+          "marker-size": "medium",
+          "marker-symbol": "",
+          "name": "Camping L'Ami Pierre"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            4.968223571777344,
+            49.84712926702993
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "marker-color": "#7e7e7e",
+          "marker-size": "medium",
+          "marker-symbol": "",
+          "name": "Camping Le Héron"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            4.951808452606201,
+            49.854379066874436
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "marker-color": "#7e7e7e",
+          "marker-size": "medium",
+          "marker-symbol": "",
+          "name": "Camping Le Trou du Cheval"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            4.9401140213012695,
+            49.85014553723395
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "marker-color": "#7e7e7e",
+          "marker-size": "medium",
+          "marker-symbol": "",
+          "name": "Camping La Membrette"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            4.905974864959717,
+            49.86536237831989
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "marker-color": "#7e7e7e",
+          "marker-size": "medium",
+          "marker-symbol": "",
+          "name": "Camping Le Jardinet"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            4.894430637359619,
+            49.868087070275315
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "marker-color": "#7e7e7e",
+          "marker-size": "medium",
+          "marker-symbol": "",
+          "name": "Camping Confort"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            4.884774684906006,
+            49.871945635007066
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "marker-color": "#7e7e7e",
+          "marker-size": "medium",
+          "marker-symbol": "",
+          "name": "Camping des Bouleaux"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            4.887070655822753,
+            49.86862645807225
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "marker-color": "#7e7e7e",
+          "marker-size": "medium",
+          "marker-symbol": "",
+          "name": "Camping La Douane"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            4.878079891204834,
+            49.86562517256558
+          ]
+        }
+      }
+    ]
+  }
