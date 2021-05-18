@@ -14,4 +14,4 @@ This is a map app that shows the Semois, local villages and campings and also nm
 
 This map app is an aid in planning a vlottentocht (raft trip).
 
-To run open `vlottentocht/index.html` in a browser or click [here](https://tijsvandenheuvel.github.io/map-apps/gr_routes)
+To run open `vlottentocht/index.html` in a browser or click [here](https://tijsvandenheuvel.github.io/map-apps/vlottentocht)
