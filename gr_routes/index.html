@@ -34,12 +34,13 @@
         
 </head>
 <body>    
-            <select id="regionSelector" onchange="changeRegion(this.value);">
+            <select id="regionSelector" onchange="changeRegion(this.value);" autocomplete="off">
                 <option value="" selected>Select region:</option>
                 <option value="VL">Vlaanderen</option>
                 <option value="WA">Wallonie</option>
                 <option value="BE">Beide</option>
             </select>
+            <button onclick="changeRegion('BE')">Beide ma dan met een knop</button>
 
             <div class="folium-map" id="map123" >
                 <script>
