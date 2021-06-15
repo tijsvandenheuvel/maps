@@ -37,6 +37,9 @@ function displayFeatureList(featurelist, type)  {
 		case "campings":
 			geojsonMarkerOptions = campingMarkerOptions;
 			break;
+        case "alleplekjes":
+            geojsonMarkerOptions = campingMarkerOptions;
+            break;
 		case "stations":
 			geojsonMarkerOptions = stationMarkerOptions;
 			break;
@@ -64,24 +67,11 @@ function displayFeatureList(featurelist, type)  {
 var plekjeshape = []
 
 
-map_123.on('click', function(e){
-    var coord = e.latlng;
-    var lat = coord.lat;
-    var lng = coord.lng;
-    console.log("You clicked the map at latitude: " + lat + " and longitude: " + lng);
-
-    plekjeshape.push(coord)
-
-    if(weggeske_selected){
-
-    }
-
-    if(veldje_selected){
-        
-    }
-    
-
-    });
+map_123.on('draw:created', function (e) {
+    console.log(e)
+    console.log(e.layerType)
+   
+});
 
     
 

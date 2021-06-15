@@ -37,18 +37,18 @@ var campingdata;
 var stationdata;
 var dorpdata;
 
-loadJSON("semois.geojson", (e) => {
+loadJSON("../data/semois.geojson", (e) => {
 	semoisdata = JSON.parse(e);
     displayFeatureList(semoisdata, "semois");
 
 });
-loadJSON("semoiscampings.geojson", (e) => {
+loadJSON("../data/semoiscampings.geojson", (e) => {
 	campingdata = JSON.parse(e);
 });
-loadJSON("semoisdorpen.geojson", (e) => {
+loadJSON("../data/semoisdorpen.geojson", (e) => {
 	dorpdata = JSON.parse(e);
 });
-loadJSON("stations.geojson", (e) => {
+loadJSON("../data/stations.geojson", (e) => {
 	stationdata = JSON.parse(e);
 });
 

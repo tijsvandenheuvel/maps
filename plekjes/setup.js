@@ -7,6 +7,7 @@ function setupMap(){
         zoom: 16,
         zoomControl: true,
         preferCanvas: false,
+        drawControl:true
     });
     
     var tile_layer_123 = L.tileLayer(
@@ -32,27 +33,15 @@ function setupMap(){
 
 var map_123 = setupMap();
 
-
-loadJSON("../alleplekjes.json", (e) => {
-    localStorage.setItem('alleplekjes', e);
-    //displayFeatureList(semoisdata, "semois");
-});
-
-var semoisdata;
-var campingdata;
 var stationdata;
-var dorpdata;
+var alleplekjesdata;
 
-loadJSON("../data/semois.geojson", (e) => {
-	semoisdata = JSON.parse(e);
-    displayFeatureList(semoisdata, "semois");
+loadJSON("../data/alle_plekjes.geojson", (e) => {
+    alleplekjesdata = JSON.parse(e);
+    displayFeatureList(alleplekjesdata, "alleplekjes");
 });
-loadJSON("../data/semoiscampings.geojson", (e) => {
-	campingdata = JSON.parse(e);
-});
-loadJSON("../data/semoisdorpen.geojson", (e) => {
-	dorpdata = JSON.parse(e);
-});
+
+
 loadJSON("../data/stations.geojson", (e) => {
 	stationdata = JSON.parse(e);
 });
@@ -62,4 +51,5 @@ var fr = new FileReader();
 fr.readAsText(document.getElementById('file').files[0]);
 
 fr.onload = function(){console.log(fr.result);displayFeatureList(JSON.parse(fr.result), 'semois')};
+
 
