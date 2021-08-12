@@ -42,16 +42,36 @@ function makeList(listOfDataNames) {
 function handleForm() {
 	var stationsbool = document.getElementById("stations").checked;
 	var plekjesbool = document.getElementById("plekjes").checked;
+    var gr_routes_vl_bool = document.getElementById("gr_routes_vl").checked;
+    var gr_routes_wa_bool = document.getElementById("gr_routes_wa").checked;
+    var gr_12_bool = document.getElementById("gr_12").checked;
+    var gr_12_slaapplaatsen_bool = document.getElementById("gr_12_slaapplaatsen").checked;
 
 	map_123.off();
 	map_123.remove();
 
 	map_123 = setupMap();
 
+    
+    if (stationsbool) {
+        displayFeatureList(stationdata, "stations");
+    }
+
 	if (plekjesbool) {
-		displayFeatureList(alleplekjesdata, "alleplekjes");
+		displayFeatureList(alleplekjesdata, "alle plekjes");
 	}
-	if (stationsbool) {
-		displayFeatureList(stationdata, "stations");
+	
+    if (gr_routes_vl_bool) {
+		displayFeatureList(gr_routes_vl_data, "gr routes vl");
+	}
+    if (gr_routes_wa_bool) {
+		displayFeatureList(gr_routes_wa_data, "gr routes wa");
+	}
+
+	if (gr_12_bool) {
+		displayFeatureList(gr_12_data, "gr 12");
+	}
+    if (gr_12_slaapplaatsen_bool) {
+		displayFeatureList(gr_12_slaapplaatsen_data, "gr 12 slaapplaatsen");
 	}
 }

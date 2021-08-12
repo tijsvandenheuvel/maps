@@ -89,29 +89,81 @@
 	</head>
 	<body>
 		<ul class="nav" id="navbar">
-			<li>
-				<button type="button" class="btn btn-light">
-					<input
-						type="checkbox"
-						id="stations"
-						name="data2"
-						autocomplete="off"
-					/>
-					<label for="data2"> stations</label>
-				</button>
-			</li>
+            &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;
+            <li>
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                      Geojson files
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                        <li>
+                            &nbsp;
+                                <input
+                                    type="checkbox"
+                                    id="plekjes"
+                                    name="data1"
+                                    autocomplete="off"
+                                />
+                                <label for="data1"> leuke plekjes</label>
+                        </li>
 
-			<li>
-				<button type="button" class="btn btn-light">
-					<input
-						type="checkbox"
-						id="plekjes"
-						name="data1"
-						autocomplete="off"
-					/>
-					<label for="data1"> alle plekjes</label>
-				</button>
-			</li>
+                        <li>
+                            &nbsp;
+                                <input
+                                    type="checkbox"
+                                    id="stations"
+                                    name="data2"
+                                    autocomplete="off"
+                                />
+                                <label for="data2"> NMBS stations</label>
+                        </li>
+
+                        <li>
+                            &nbsp;
+                                <input
+                                    type="checkbox"
+                                    id="gr_routes_vl"
+                                    name="data3"
+                                    autocomplete="off"
+                                />
+                                <label for="data3"> gr_routes_vl</label>
+                        </li>
+
+                        <li>
+                            &nbsp;
+                                <input
+                                    type="checkbox"
+                                    id="gr_routes_wa"
+                                    name="data3"
+                                    autocomplete="off"
+                                />
+                                <label for="data3"> gr_routes_wa</label>
+                        </li>
+
+                        <li>
+                            &nbsp;
+                                <input
+                                    type="checkbox"
+                                    id="gr_12"
+                                    name="data4"
+                                    autocomplete="off"
+                                />
+                                <label for="data4">GR12</label>
+                        </li>
+                        <li>
+                            &nbsp;
+                                <input
+                                    type="checkbox"
+                                    id="gr_12_slaapplaatsen"
+                                    name="data5"
+                                    autocomplete="off"
+                                />
+                                <label for="data5">GR12 slaap</label>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+
 
 			<li>
 				<button
@@ -134,9 +186,8 @@
 			</li>
 
             <li class="nav-item">
-				<input type="file" id="file" value="upload"/>
+				<input type="file" id="file" value="upload" onchange="openFile(event)" autocomplete="off"/>
 			</li>
-
             
 		</ul>
 

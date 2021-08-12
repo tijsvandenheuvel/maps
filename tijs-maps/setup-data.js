@@ -35,6 +35,10 @@ function loadData(listOfFileNames,listOfDataNames){
 
 var stationdata;
 var alleplekjesdata;
+var gr_routes_vl_data;
+var gr_routes_wa_data;
+var gr_12_data;
+var gr_12_slaapplaatsen_data;
 
 loadJSON("../data/stations.geojson", (e) => {
     stationdata = JSON.parse(e);
@@ -45,10 +49,44 @@ loadJSON("../data/alle_plekjes.geojson", (e) => {
     alleplekjesdata = JSON.parse(e);
     //displayFeatureList(stationdata, "stations");
 });
+loadJSON("../data/gr_list_vlaanderen.geojson", (e) => {
+    gr_routes_vl_data = JSON.parse(e);
+    //displayFeatureList(stationdata, "stations");
+});
+
+loadJSON("../data/gr_list_wallonie.geojson", (e) => {
+    gr_routes_wa_data = JSON.parse(e);
+    //displayFeatureList(stationdata, "stations");
+});
+loadJSON("../data/gr_12.geojson", (e) => {
+    gr_12_data = JSON.parse(e);
+    //displayFeatureList(stationdata, "stations");
+});
+
+loadJSON("../data/gr_12_slaapplaatsen.geojson", (e) => {
+    gr_12_slaapplaatsen_data = JSON.parse(e);
+    //displayFeatureList(stationdata, "stations");
+});
+
 
 // upload file
-var fr = new FileReader();
-fr.readAsText(document.getElementById('file').files[0]);
-fr.onload = function(){displayFeatureList(JSON.parse(fr.result), 'gr')};
+var filedata;
+function openFile(event) {
+    var input = event.target;
+
+    var reader = new FileReader();
+
+    reader.readAsText(input.files[0]);
+
+    // check if Geojson
+
+    reader.onload = function() {
+    filedata = JSON.parse(reader.result)
+    file_name = input.files[0].name
+    displayFeatureList(filedata,file_name);
+    };
+    
+  };
+
 
 
