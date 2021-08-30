@@ -23,14 +23,16 @@ function setupMap() {
 		}
 	);
 
+
+
+    // ZOOM
 	L.control.scale().addTo(map_123);
 
 	// DRAW
 	drawnItems = L.featureGroup().addTo(map_123);
 
-	layercontrol = L.control.layers(
-        { osm: osm_layer.addTo(map_123) }, 
-        { drawing: drawnItems })
+	layercontrol = L.control
+		.layers({ osm: osm_layer.addTo(map_123) }, { drawing: drawnItems })
 		.addTo(map_123);
 
 	map_123.addControl(
@@ -55,6 +57,8 @@ function setupMap() {
 
 		drawnItems.addLayer(layer);
 	});
+
+	var helloPopup = L.popup().setContent("Hello World!");
 
 	return map_123;
 }
@@ -93,26 +97,24 @@ function addPopUp(feature, layer) {
 }
 
 function addToolTip(feature, layer) {
-    //console.log(feature.properties.NAME)
+	//console.log(feature.properties.NAME)
 	if (feature.properties && feature.properties.NAME) {
 		layer.bindTooltip(feature.properties.NAME);
 	}
 }
 
-function displayFeatureList(featurelist,file_name) {
-    // new featuregroup layer
-    geojson_features = L.featureGroup().addTo(map_123);
+function displayFeatureList(featurelist, file_name) {
+	// new featuregroup layer
+	geojson_features = L.featureGroup().addTo(map_123);
 
-    type = featurelist.features[0].geometry.type
+	type = featurelist.features[0].geometry.type;
 
-	if (type == "MultiPolygon"||type =="Polygon") {
-	 	var areas = new L.GeoJSON(featurelist, {
-	 		style: campingMarkerOptions,
+	if (type == "MultiPolygon" || type == "Polygon") {
+		var areas = new L.GeoJSON(featurelist, {
+			style: campingMarkerOptions,
 			onEachFeature: addPopUp,
-	 	}).addTo(geojson_features);
-	 } 
-     
-     else if (type == "Point") {
+		}).addTo(geojson_features);
+	} else if (type == "Point") {
 		for (let i = 0; i < featurelist.features.length; i++) {
 			L.geoJSON(featurelist.features[i], {
 				pointToLayer: function (feature, latlng) {
@@ -121,23 +123,21 @@ function displayFeatureList(featurelist,file_name) {
 				onEachFeature: addPopUp,
 			}).addTo(geojson_features);
 		}
-	} 
-    
-    else if (type=='LineString'||type=='MultiLineString'){
-        for (let i = 0; i < featurelist.features.length; i++) {
-            L.geoJSON(featurelist.features[i],{
-                onEachFeature: addToolTip,
-            }).addTo(geojson_features);
-        }
-    }
+	} else if (type == "LineString" || type == "MultiLineString") {
+		for (let i = 0; i < featurelist.features.length; i++) {
+			L.geoJSON(featurelist.features[i], {
+				onEachFeature: addToolTip,
+			}).addTo(geojson_features);
+		}
+	}
 
-    // add to control 
-    layercontrol.addOverlay(geojson_features,file_name)
+	// add to control
+	layercontrol.addOverlay(geojson_features, file_name);
 }
 
 function displayFeatureList2(featurelist, type) {
-    // new featuregroup layer
-    geojson_features = L.featureGroup().addTo(map_123);
+	// new featuregroup layer
+	geojson_features = L.featureGroup().addTo(map_123);
 
 	if (type == "alleplekjes") {
 		var areas = new L.GeoJSON(featurelist, {
@@ -153,16 +153,16 @@ function displayFeatureList2(featurelist, type) {
 				onEachFeature: addPopUp,
 			}).addTo(geojson_features);
 		}
-	} else if (type=='gr'){
-        for (let i = 0; i < featurelist.features.length; i++) {
-            L.geoJSON(featurelist.features[i],{
-                onEachFeature: addToolTip,
-            }).addTo(geojson_features);
-        }
-    }
+	} else if (type == "gr") {
+		for (let i = 0; i < featurelist.features.length; i++) {
+			L.geoJSON(featurelist.features[i], {
+				onEachFeature: addToolTip,
+			}).addTo(geojson_features);
+		}
+	}
 
-    // add to control 
-    layercontrol.addOverlay(geojson_features,type)
+	// add to control
+	layercontrol.addOverlay(geojson_features, type);
 }
 
 function clearMap() {

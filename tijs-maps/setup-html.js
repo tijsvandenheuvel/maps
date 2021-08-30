@@ -75,3 +75,7 @@ function handleForm() {
 		displayFeatureList(gr_12_slaapplaatsen_data, "gr 12 slaapplaatsen");
 	}
 }
+
+function Action(){
+    console.log("hllo")
+}
