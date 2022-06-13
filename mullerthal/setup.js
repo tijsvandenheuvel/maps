@@ -46,7 +46,7 @@ loadJSON("route3.geojson", (e) => {
 });
 loadJSON("map(1).geojson", (e) => {
 	routedata = JSON.parse(e);
-    // displayFeatureList(routedata);
+    displayFeatureList(routedata);
 });
 
 map_123.on('click', function(e){
