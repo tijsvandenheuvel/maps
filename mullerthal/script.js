@@ -28,7 +28,7 @@ function displayFeatureList(featurelist) {
             }).addTo(map_123);
         }else{
             console.log(featurelist.features[i])
-            L.geoJSON(featurelist.features[i]).addTo(map_123);
+            L.geoJSON(featurelist.features[i],{onEachFeature: addPopUp}).addTo(map_123);
         }
 		
 	}
