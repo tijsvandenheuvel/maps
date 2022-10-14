@@ -1,0 +1,50 @@
+html,
+body {
+	padding: 0;
+	margin: 0;
+    border: 0;
+    overflow: hidden;
+}
+#earth_div {
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	/* position: absolute !important; */
+    z-index:100;
+    margin-top: 0 !important;
+}
+
+body {
+	background: url("stars_gif3.gif");
+	background-size: cover;
+    /* background-color: black; */
+}
+
+#square_container {
+	height: var(--fh, 1440px);
+	width: var(--fw, 1440px);
+	margin: 0 auto;
+}
+
+#square_container > div {
+	position: relative;
+	height: var(--fh, 1440px);
+	width: var(--fw, 1440px);
+	margin-top: calc(-1 * var(--fh, 1440px));
+	background-size: cover;
+}
+
+#clockface {
+	z-index: 50;
+    background: url("clockface_1440.png");
+    /* background-size: cover; */
+}
+
+#buttons {
+    z-index: 200;
+    position: absolute;
+    top: calc((var(--vh, 1vh) * 85));
+    left: 20px;
+    color: white;
+  }

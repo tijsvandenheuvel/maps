@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="style.css" />
+		<script type="text/javascript" src="jquery.min.js"></script>
+		<script src="https://www.webglearth.com/v2/api.js"></script>
+		<script>
+			var earth;
+			function initialize() {
+				url =
+                "https://api.maptiler.com/tiles/satellite-v2/{z}/{x}/{y}.jpg?key=1jHFVo6XRjDW2WcMpPcm";
+
+				earth = new WE.map("earth_div", {
+					center: [51, 1],
+					zoom: 2.28,
+				});
+				WE.tileLayer(url, {
+					// minZoom:2.27
+				}).addTo(earth);
+
+				// var before = null;
+				// requestAnimationFrame(function animate(now) {
+				// 	var c = earth.getPosition();
+				// 	var elapsed = before ? now - before : 0;
+				// 	before = now;
+				// 	earth.setCenter([c[0], c[1] - 0.001 * (elapsed / 100)]);
+				// 	requestAnimationFrame(animate);
+				// });
+			}
+
+			window.setStyleProperties = function setStyleProperties() {
+				var w = window.innerWidth;
+				var h = window.innerHeight;
+
+				// https://css-tricks.com/the-trick-to-viewport-units-on-mobile/
+				// First we get the viewport height and we multiple it by 1% to get a value for a vh unit
+				var vh = window.innerHeight * 0.01;
+				var vw = window.innerWidth * 0.01;
+
+				// Then we set the value in the --vh custom property to the root of the document
+				document.documentElement.style.setProperty("--vh", `${vh}px`);
+				document.documentElement.style.setProperty("--vw", `${vw}px`);
+
+				// portrait
+				if (w < h) {
+					document.documentElement.style.setProperty(
+						"--fh",
+						`${w}px`
+					);
+					document.documentElement.style.setProperty(
+						"--fw",
+						`${w}px`
+					);
+				} else {
+					document.documentElement.style.setProperty(
+						"--fh",
+						`${h}px`
+					);
+					document.documentElement.style.setProperty(
+						"--fw",
+						`${h}px`
+					);
+				}
+			};
+
+			window.onresize = function () {
+				window.setStyleProperties();
+			};
+
+			// ZOOM
+			let zoom = 1;
+			const ZOOM_SPEED = 0.03;
+			let max_zoom = 3;
+			let min_zoom = 1;
+			document.addEventListener("wheel", function (e) {
+				if (e.deltaY > 0) {
+					if (zoom > min_zoom) {
+						$(".zoom").css(
+							"transform",
+							`scale(${(zoom -= ZOOM_SPEED)})`
+						);
+					}
+				} else {
+					if (zoom < max_zoom) {
+						$(".zoom").css(
+							"transform",
+							`scale(${(zoom += ZOOM_SPEED)})`
+						);
+					}
+				}
+			});
+
+			setStyleProperties();
+
+			$(document).ready(function () {
+				// radio buttons background
+				$("#myRadioButtons input").on("change", function () {
+					let val = $(
+						"input[name=radioName]:checked",
+						"#myRadioButtons"
+					).val();
+					let url;
+					switch (val) {
+						case "1":
+							url =
+								"https://api.maptiler.com/tiles/satellite-v2/{z}/{x}/{y}.jpg?key=1jHFVo6XRjDW2WcMpPcm";
+							break;
+						case "2":
+							url =
+								"https://api.maptiler.com/maps/hybrid/{z}/{x}/{y}.jpg?key=1jHFVo6XRjDW2WcMpPcm";
+							break;
+
+                        case "3":
+                            url = "https://api.maptiler.com/maps/openstreetmap/{z}/{x}/{y}.jpg?key=1jHFVo6XRjDW2WcMpPcm"
+                            break;
+                        default:
+							url =
+								"https://api.maptiler.com/maps/hybrid/{z}/{x}/{y}.jpg?key=1jHFVo6XRjDW2WcMpPcm";
+					}
+					WE.tileLayer(url).addTo(earth);
+				});
+			});
+		</script>
+		<title>Earth website</title>
+	</head>
+	<body onload="initialize()">
+		<div id="square_container">
+			<div id="earth_div"></div>
+			<div id="clockface" class="zoom"></div>
+		</div>
+
+		<div id="buttons">
+			<form id="myRadioButtons" autocomplete="false">
+				<input
+					type="radio"
+					name="radioName"
+					value="1"
+					autocomplete="off"
+                    checked
+				/>
+				satellite <br />
+				<input
+					type="radio"
+					name="radioName"
+					value="2"
+					autocomplete="off"
+				/>
+				satellite + names <br />
+                <input
+					type="radio"
+					name="radioName"
+					value="3"
+					autocomplete="off"
+				/>
+				openstreetmap <br />
+			</form>
+		</div>
+	</body>
+</html>
