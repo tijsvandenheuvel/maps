@@ -8,15 +8,15 @@
 			var earth;
 			function initialize() {
 				url =
-                "https://api.maptiler.com/tiles/satellite-v2/{z}/{x}/{y}.jpg?key=1jHFVo6XRjDW2WcMpPcm";
+                "https://api.maptiler.com/maps/hybrid/{z}/{x}/{y}.jpg?key=pZ9VmX2rvzJBAOfSDaY8";
 
 				earth = new WE.map("earth_div", {
 					center: [51, 1],
 					zoom: 2.28,
 				});
-				WE.tileLayer(url, {
-					// minZoom:2.27
-				}).addTo(earth);
+				WE.tileLayer(url,{
+                    attribution: '<a href="https://www.maptiler.com/copyright/" target="_blank">&copy; MapTiler</a> <a href="https://www.openstreetmap.org/copyright" target="_blank">&copy; OpenStreetMap contributors</a>'
+                }).addTo(earth);
 
 				// var before = null;
 				// requestAnimationFrame(function animate(now) {
@@ -103,19 +103,19 @@
 					switch (val) {
 						case "1":
 							url =
-								"https://api.maptiler.com/tiles/satellite-v2/{z}/{x}/{y}.jpg?key=1jHFVo6XRjDW2WcMpPcm";
+								"https://api.maptiler.com/tiles/satellite-v2/{z}/{x}/{y}.jpg?key=pZ9VmX2rvzJBAOfSDaY8";
 							break;
 						case "2":
 							url =
-								"https://api.maptiler.com/maps/hybrid/{z}/{x}/{y}.jpg?key=1jHFVo6XRjDW2WcMpPcm";
+								"https://api.maptiler.com/maps/hybrid/{z}/{x}/{y}.jpg?key=pZ9VmX2rvzJBAOfSDaY8";
 							break;
 
                         case "3":
-                            url = "https://api.maptiler.com/maps/openstreetmap/{z}/{x}/{y}.jpg?key=1jHFVo6XRjDW2WcMpPcm"
+                            url = "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
                             break;
                         default:
 							url =
-								"https://api.maptiler.com/maps/hybrid/{z}/{x}/{y}.jpg?key=1jHFVo6XRjDW2WcMpPcm";
+								"https://api.maptiler.com/maps/hybrid/{z}/{x}/{y}.jpg?key=pZ9VmX2rvzJBAOfSDaY8";
 					}
 					WE.tileLayer(url).addTo(earth);
 				});

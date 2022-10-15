@@ -58,4 +58,4 @@ map_123.on('click', function(e){
     var lat = coord.lat;
     var lng = coord.lng;
     console.log("You clicked the map at latitude: " + lat + " and longitude: " + lng);
-    });
+});
