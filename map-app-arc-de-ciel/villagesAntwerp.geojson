@@ -1,0 +1,2638 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Mortsel",
+          "place": "town"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            4.4566996,
+            51.1704119
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Borsbeek",
+          "place": "town"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            4.488953,
+            51.1928907
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Lier",
+          "place": "town"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            4.5696516,
+            51.131069
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Gestel",
+          "place": "village"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            4.6694284,
+            51.1290504
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Nijlen",
+          "place": "town"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            4.6702859,
+            51.1610023
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Heist-op-den-Berg",
+          "place": "town"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            4.7286753,
+            51.0759905
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Emblem",
+          "place": "village"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            4.6047327,
+            51.1625761
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Kessel",
+          "place": "village"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            4.6282198,
+            51.1383696
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Herenthout",
+          "place": "town"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            4.7543972,
+            51.1392427
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Turnhout",
+          "place": "town"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            4.948461,
+            51.3233812
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Zoerle-Parwijs",
+          "place": "village"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            4.8729402,
+            51.0880889
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Berlaar",
+          "place": "town"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            4.6575109,
+            51.1179047
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Koningshooikt",
+          "place": "village"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            4.6097183,
+            51.0965644
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Bonheiden",
+          "place": "town"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            4.5483885,
+            51.0253242
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Sint-Katelijne-Waver",
+          "place": "town"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            4.532238,
+            51.0699542
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Arendonk",
+          "place": "town"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            5.0864557,
+            51.3202315
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Kalmthout",
+          "place": "town"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            4.4763255,
+            51.3832723
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Achterbroek",
+          "place": "village"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            4.5006847,
+            51.3972179
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Nieuwmoer",
+          "place": "village"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            4.51886,
+            51.4332208
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Herentals",
+          "place": "town"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            4.8362595,
+            51.1765426
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Hoogstraten",
+          "place": "town"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            4.7616865,
+            51.4012894
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Zwijndrecht",
+          "place": "town"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            4.3302898,
+            51.2185443
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Sint-Amands",
+          "place": "village"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            4.201114,
+            51.0560497
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Lint",
+          "place": "village"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            4.4922187,
+            51.1268305
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Edegem",
+          "place": "town"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            4.4458312,
+            51.1548066
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Hove",
+          "place": "village"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            4.477387,
+            51.1486117
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Onze-Lieve-Vrouw-Waver",
+          "place": "village"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            4.5798347,
+            51.0624896
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Duffel",
+          "place": "town"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            4.5061988,
+            51.0957176
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Putte",
+          "place": "town"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            4.6310473,
+            51.0570823
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Boom",
+          "place": "town"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            4.3667216,
+            51.0873789
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Bevel",
+          "place": "village"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            4.6829217,
+            51.1362648
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Berendrecht",
+          "place": "village"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            4.319401,
+            51.3455396
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Zandvliet",
+          "place": "village"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            4.3086817,
+            51.3599666
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Heist-Goor",
+          "place": "village"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            4.723791,
+            51.0457035
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Peulis",
+          "place": "village"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            4.5893375,
+            51.0383668
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Lippelo",
+          "place": "village"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            4.2615,
+            51.0430989
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Puurs",
+          "place": "village"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            4.2817075,
+            51.0762086
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Beerzel",
+          "place": "village"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            4.6698925,
+            51.0586177
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Grasheide",
+          "place": "village"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            4.6584565,
+            51.0291851
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Rijkevorsel",
+          "place": "town"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            4.758514,
+            51.3503707
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Wortel",
+          "place": "village"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            4.7956648,
+            51.3968506
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Merksplas",
+          "place": "town"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            4.8627355,
+            51.3579924
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Brecht",
+          "place": "town"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            4.6398673,
+            51.3484804
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Boechout",
+          "place": "town"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            4.4963921,
+            51.1635604
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Schoten",
+          "place": "town"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            4.4980446,
+            51.2516344
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Brasschaat",
+          "place": "town"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            4.4917295,
+            51.2900693
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Meerle",
+          "place": "village"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            4.8051679,
+            51.4743516
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Burcht",
+          "place": "village"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            4.3416362,
+            51.2028046
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Vremde",
+          "place": "village"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            4.5226229,
+            51.1753099
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Hoevenen",
+          "place": "village"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            4.4046996,
+            51.3066168
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Kapellen",
+          "place": "town"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            4.4295354,
+            51.3149455
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Stabroek",
+          "place": "town"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            4.3680664,
+            51.3326535
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Wechelderzande",
+          "place": "village"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            4.7863029,
+            51.2634596
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Beerse",
+          "place": "town"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            4.8564494,
+            51.3191388
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Oosthoven",
+          "place": "village"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            4.9735547,
+            51.3368441
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Gooreind",
+          "place": "village"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            4.5429215,
+            51.3561633
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Heindonk",
+          "place": "village"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            4.4066584,
+            51.0670264
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Rumst",
+          "place": "town"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            4.4240472,
+            51.0792853
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Terhagen",
+          "place": "village"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            4.3993623,
+            51.078277
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Willebroek",
+          "place": "town"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            4.3588917,
+            51.0606816
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Blaasveld",
+          "place": "village"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            4.3723517,
+            51.0565194
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Tisselt",
+          "place": "village"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            4.3598407,
+            51.033992
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Reet",
+          "place": "village"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            4.4129446,
+            51.1017566
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Wintam",
+          "place": "village"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            4.2963506,
+            51.1072567
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Hingene",
+          "place": "village"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            4.2689164,
+            51.1033431
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Hemiksem",
+          "place": "town"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            4.3409826,
+            51.1430192
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Schelle",
+          "place": "village"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            4.3361875,
+            51.1245635
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Niel",
+          "place": "village"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            4.3303396,
+            51.1098649
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Aartselaar",
+          "place": "town"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            4.3870241,
+            51.133297
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Houtvenne",
+          "place": "village"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            4.8089455,
+            51.0418339
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Ranst",
+          "place": "town"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            4.5633,
+            51.1897015
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Wommelgem",
+          "place": "town"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            4.5238022,
+            51.2031044
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Rijmenam",
+          "place": "village"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            4.5842221,
+            51.0010818
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Essen",
+          "place": "town"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            4.4698256,
+            51.4679229
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Hoek",
+          "place": "village"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            4.4147334,
+            51.4474288
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Oevel",
+          "place": "village"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            4.9053101,
+            51.1377568
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Westerlo",
+          "place": "town"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            4.9168675,
+            51.086694
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Tongerlo",
+          "place": "village"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            4.915524,
+            51.1130594
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Baarle",
+          "place": "village"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            4.9308932,
+            51.442616
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Ruisbroek",
+          "place": "village"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            4.3306925,
+            51.0881287
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Baarle-Hertog",
+          "place": "village"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            4.9316995,
+            51.4383589
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Sint-Job-in-'t-Goor",
+          "place": "village"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            4.5772717,
+            51.2919982
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Broechem",
+          "place": "village"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            4.5967162,
+            51.1813951
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Bornem",
+          "place": "town"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            4.2341308,
+            51.0953014
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Zoersel",
+          "place": "town"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            4.7132557,
+            51.2716725
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Halle",
+          "place": "village"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            4.6423668,
+            51.2418599
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Pulle",
+          "place": "village"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            4.7117525,
+            51.2033571
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Liezele",
+          "place": "village"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            4.280892,
+            51.0595696
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Oostmalle",
+          "place": "village"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            4.7340666,
+            51.3021319
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Herselt",
+          "place": "town"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            4.883265,
+            51.0535029
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Wuustwezel",
+          "place": "town"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            4.5990942,
+            51.3920166
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Oelegem",
+          "place": "village"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            4.5972162,
+            51.2110687
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Zandhoven",
+          "place": "town"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            4.6595103,
+            51.2147918
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Pulderbos",
+          "place": "village"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            4.6900839,
+            51.2160122
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Malle",
+          "place": "town"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            4.6933094,
+            51.2970123
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Schilde",
+          "place": "town"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            4.5814855,
+            51.2388703
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "'s-Gravenwezel",
+          "place": "village"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            4.5556038,
+            51.2624856
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Wijnegem",
+          "place": "village"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            4.5225318,
+            51.2270761
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Westmeerbeek",
+          "place": "village"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            4.8351334,
+            51.0603638
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Ramsel",
+          "place": "village"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            4.8336098,
+            51.0324718
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Heultje",
+          "place": "village"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            4.8404549,
+            51.0876789
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Morkhoven",
+          "place": "village"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            4.8207801,
+            51.1203399
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Noorderwijk",
+          "place": "village"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            4.8402651,
+            51.141115
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Voortkapel",
+          "place": "village"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            4.8623348,
+            51.1155858
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Sint-Antonius",
+          "place": "village"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            4.6368375,
+            51.2664123
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Vlimmeren",
+          "place": "village"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            4.7821797,
+            51.2988018
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Blauberg",
+          "place": "village"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            4.9292719,
+            51.0438912
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Zammel",
+          "place": "village"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            4.9452442,
+            51.0969023
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Oosterlo",
+          "place": "village"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            4.977058,
+            51.1083866
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Bergom",
+          "place": "village"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            4.9173664,
+            51.0745117
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Vorst-Meerlaar",
+          "place": "village"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            5.0683581,
+            51.0860783
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Oppuurs",
+          "place": "village"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            4.2444735,
+            51.0663067
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Eikevliet",
+          "place": "village"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            4.3048536,
+            51.091972
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Maria-ter-Heide",
+          "place": "village"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            4.5201317,
+            51.3238215
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Heide",
+          "place": "village"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            4.4575042,
+            51.3688401
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Grobbendonk",
+          "place": "town"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            4.7385027,
+            51.1919904
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Viersel",
+          "place": "village"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            4.6503063,
+            51.187272
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Massenhoven",
+          "place": "village"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            4.6349603,
+            51.1990199
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Vorselaar",
+          "place": "village"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            4.769482,
+            51.2023448
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Meer",
+          "place": "village"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            4.7390521,
+            51.4471565
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Laakdal",
+          "place": "town"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            5.0073022,
+            51.0802695
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Muizen",
+          "place": "village"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            4.5143485,
+            51.0108505
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Prinsenhoek",
+          "place": "village"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            4.5275897,
+            50.9951827
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Mariekerke",
+          "place": "village"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            4.191058,
+            51.0630598
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Poederlee",
+          "place": "village"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            4.8359528,
+            51.2267185
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Lille",
+          "place": "town"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            4.8242404,
+            51.238218
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Breendonk",
+          "place": "village"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            4.3244863,
+            51.0424768
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Loenhout",
+          "place": "village"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            4.6432154,
+            51.3985762
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Gierle",
+          "place": "village"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            4.867558,
+            51.2675145
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Lichtaart",
+          "place": "village"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            4.9198927,
+            51.2240538
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Tielen",
+          "place": "village"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            4.8965455,
+            51.2422595
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Sint-Jozef-Rijkevorsel",
+          "place": "village"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            4.7824798,
+            51.3290012
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Den Hout",
+          "place": "village"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            4.8334384,
+            51.3219965
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Sint-Jozef-Olen",
+          "place": "village"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            4.9030001,
+            51.1808494
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Onze-Lieve-Vrouw-Olen",
+          "place": "village"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            4.9010557,
+            51.1689059
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Vosselaar",
+          "place": "town"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            4.8878026,
+            51.3129153
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Olen",
+          "place": "town"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            4.8597257,
+            51.1438611
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Mol",
+          "place": "town"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            5.1155267,
+            51.1840421
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Meerhout",
+          "place": "town"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            5.0772388,
+            51.1317433
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Ten Aard",
+          "place": "village"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            4.9793004,
+            51.2042561
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Larum",
+          "place": "village"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            4.9450867,
+            51.1668768
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Dessel",
+          "place": "town"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            5.1128221,
+            51.2390765
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Kasterlee",
+          "place": "town"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            4.967812,
+            51.2407915
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Putte",
+          "place": "village"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            4.39468,
+            51.3558468
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Sint-Lenaarts",
+          "place": "village"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            4.6787433,
+            51.3473203
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Retie",
+          "place": "town"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            5.0843883,
+            51.2675862
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Geel",
+          "place": "town"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            4.9903187,
+            51.1610826
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Antwerpen",
+          "place": "city"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            4.3997081,
+            51.2211097
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Zondereigen",
+          "place": "village"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            4.8925005,
+            51.4064675
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Bel",
+          "place": "village"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            5.0636954,
+            51.162803
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Meersel-Dreef",
+          "place": "village"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            4.7727663,
+            51.4987947
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Minderhout",
+          "place": "village"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            4.7636002,
+            51.4174934
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Bouwel",
+          "place": "village"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            4.7428091,
+            51.1695534
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Oud-Turnhout",
+          "place": "town"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            4.9817086,
+            51.3178319
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Poppel",
+          "place": "village"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            5.0427588,
+            51.4476125
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Ravels",
+          "place": "town"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            4.9955625,
+            51.3717045
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Weelde",
+          "place": "village"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            4.9905925,
+            51.4071394
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Booischot",
+          "place": "village"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            4.7784936,
+            51.0524068
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Hallaar",
+          "place": "village"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            4.7294097,
+            51.0845683
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Itegem",
+          "place": "village"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            4.7294471,
+            51.1030959
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Schriek",
+          "place": "village"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            4.6916315,
+            51.0249522
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Wiekevorst",
+          "place": "village"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            4.7941786,
+            51.1099023
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Heffen",
+          "place": "village"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            4.421812,
+            51.0469132
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Hombeek",
+          "place": "village"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            4.4398366,
+            51.0158695
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Leest",
+          "place": "village"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            4.4150058,
+            51.0350559
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Mechelen",
+          "place": "town"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            4.4803453,
+            51.0281381
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Walem",
+          "place": "village"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            4.4568748,
+            51.0657941
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Eindhout",
+          "place": "village"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            5.003113,
+            51.1049674
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Veerle",
+          "place": "village"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            4.986472,
+            51.0690138
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Vorst",
+          "place": "village"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            5.0201367,
+            51.0804617
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Balen",
+          "place": "town"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            5.1696859,
+            51.1707551
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Olmen",
+          "place": "village"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            5.1487716,
+            51.1424029
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Kontich",
+          "place": "town"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            4.4454784,
+            51.1353297
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Waarloos",
+          "place": "village"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            4.453,
+            51.1052659
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Wildert",
+          "place": "village"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            4.4649835,
+            51.4279911
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Horendonk",
+          "place": "village"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            4.5026984,
+            51.4694171
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Weert",
+          "place": "village"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            4.1920146,
+            51.1021651
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Hulshout",
+          "place": "town"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            4.7885461,
+            51.0753923
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Varendonk",
+          "place": "village"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            4.9552253,
+            51.0801317
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Zwaneven",
+          "place": "village"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            5.0038642,
+            51.3091278
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Heikant",
+          "place": "village"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            4.4463462,
+            51.4536426
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Westmalle",
+          "place": "village"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            4.6908984,
+            51.2988871
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Puurs-Sint-Amands",
+          "place": "town"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            4.2812346,
+            51.066411
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Winkelomheide",
+          "place": "village"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            5.0110797,
+            51.1273454
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Punt",
+          "place": "village"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            4.9453319,
+            51.141839
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Elsum",
+          "place": "village"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            4.9768715,
+            51.1623919
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Holven",
+          "place": "village"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            4.9860291,
+            51.1756928
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "De Vrij",
+          "place": "village"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            5.0985593,
+            51.3344409
+          ]
+        }
+      }
+    ]
+  }
+  

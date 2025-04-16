@@ -1,0 +1,431 @@
+[
+    {
+        "bounds": {
+            "northeast": {
+                "lat": 34.13974049999999,
+                "lng": -118.0353631
+            },
+            "southwest": {
+                "lat": 34.0521961,
+                "lng": -118.2436728
+            }
+        },
+        "copyrights": "Map data \u00a92024",
+        "legs": [
+            {
+                "distance": {
+                    "text": "23.4 km",
+                    "value": 23353
+                },
+                "duration": {
+                    "text": "5 hours 28 mins",
+                    "value": 19655
+                },
+                "end_address": "104 Huntington Dr, Arcadia, CA 91007, USA",
+                "end_location": {
+                    "lat": 34.13974049999999,
+                    "lng": -118.0353631
+                },
+                "start_address": "110 Judge John Aiso St, Los Angeles, CA 90012, USA",
+                "start_location": {
+                    "lat": 34.0522455,
+                    "lng": -118.2436728
+                },
+                "steps": [
+                    {
+                        "distance": {
+                            "text": "22 m",
+                            "value": 22
+                        },
+                        "duration": {
+                            "text": "1 min",
+                            "value": 17
+                        },
+                        "end_location": {
+                            "lat": 34.0521961,
+                            "lng": -118.2435987
+                        },
+                        "html_instructions": "Head <b>southeast</b> on <b>W 1st St</b> toward <b>Main St</b>",
+                        "polyline": {
+                            "points": "qyynE|mupUHM"
+                        },
+                        "start_location": {
+                            "lat": 34.0522455,
+                            "lng": -118.2436728
+                        },
+                        "travel_mode": "WALKING"
+                    },
+                    {
+                        "distance": {
+                            "text": "0.8 km",
+                            "value": 838
+                        },
+                        "duration": {
+                            "text": "12 mins",
+                            "value": 732
+                        },
+                        "end_location": {
+                            "lat": 34.0581421,
+                            "lng": -118.2378196
+                        },
+                        "html_instructions": "Turn <b>left</b> onto <b>N Main St</b>",
+                        "maneuver": "turn-left",
+                        "polyline": {
+                            "points": "gyynEnmupUg@a@JSg@a@KKe@GACOMOOOOSQQSSQe@c@GG][U_@QQCC[IABCC[YACBEIOOAu@q@k@i@IGIIUSAA[Y[c@KICFQQSQSQKIOMQO@AIKMKa@YIIa@_@SQIIGEOOOOKIMMQOIIKKMKDGJUBEKKi@e@SQCCOMOMQMACk@g@c@a@"
+                        },
+                        "start_location": {
+                            "lat": 34.0521961,
+                            "lng": -118.2435987
+                        },
+                        "travel_mode": "WALKING"
+                    },
+                    {
+                        "distance": {
+                            "text": "1.2 km",
+                            "value": 1198
+                        },
+                        "duration": {
+                            "text": "17 mins",
+                            "value": 1016
+                        },
+                        "end_location": {
+                            "lat": 34.0544007,
+                            "lng": -118.2261121
+                        },
+                        "html_instructions": "Turn <b>right</b> onto <b>E Cesar E Chavez Ave</b>",
+                        "maneuver": "turn-right",
+                        "polyline": {
+                            "points": "k~znEjitpU?E?GBMDc@BIBK@MBKRq@?CAAHc@BKB[Hg@HUJi@@@Fc@C?Ls@BSP{@BMPaABKDS@KDOJi@@GBODQ@OH_@@I@GFYDOF_@H]@IBM@INYHWDSJk@P{@DUBM@CNy@@CC?FYRgAH[@?B]CCHa@f@wBBMFW@ANs@FKFWH_@FOVeARs@BGBO@KDONi@FUH[JWNk@ZgANe@JUDMFYPc@L[@CX{@"
+                        },
+                        "start_location": {
+                            "lat": 34.0581421,
+                            "lng": -118.2378196
+                        },
+                        "travel_mode": "WALKING"
+                    },
+                    {
+                        "distance": {
+                            "text": "3.9 km",
+                            "value": 3945
+                        },
+                        "duration": {
+                            "text": "57 mins",
+                            "value": 3406
+                        },
+                        "end_location": {
+                            "lat": 34.077119,
+                            "lng": -118.194161
+                        },
+                        "html_instructions": "Turn <b>left</b> onto <b>N Mission Rd</b><div style=\"font-size:0.9em\">Pass by Jack in the Box (on the left in 1.4 km)</div>",
+                        "maneuver": "turn-left",
+                        "polyline": {
+                            "points": "_gznEd`rpUOo@@AQu@[eAEMK[Oe@I]KYi@eBIWK]EOk@{AC@Sk@?@KYUk@Ka@S]ACEKMc@Ma@Ia@ESI]GWU}@GYGUG[Mc@Ia@Mg@Kg@Oo@ESQs@IWACEMCGCGEICESYMSq@aA}@qAi@w@wAuBMa@[QCOGIGKGGQUKMSWOQEGOQOUQUKMEEOQMO_@i@E@MSIICIQUa@e@Y_@CCGKQUCB[g@BAEGEGEGYa@EKMQCIACKOABAEMWAC@CCCOWCEEGISIMQSe@y@D?EEQ[OWSYg@{@]k@OYMSIOc@q@A?g@i@DAWe@QSWa@]i@CEMUII_@i@OU{AyBi@w@MQIIKQa@o@ACSUQ[ACOYYo@MYAGO]MYEMEF?AKa@@CKWYu@G[a@eAAHIOAC@EGMi@uAAGGUIOEQEEKWOa@Ic@CDEMUo@ISOa@I]]_AQ[B?K[KWEKEMIQM]IQCMCGSe@ACACM_@CIEKM_@MOGMIUAEMYEMKYACIUOa@DM]c@Si@IUSSQQOUIGYYYYEESQWYYWMOkAiAo@k@KK?DAAQUEE?AQOQIQKOKIEQKqBoAECqBoAUKIG_@USOUOo@_@SOsA{@SKe@YTk@YQOIGMgAq@YOMGQM[QWQoBiAWQm@]YMm@]SMc@Y[QOKSIAAe@YUODGCCOUEJ"
+                        },
+                        "start_location": {
+                            "lat": 34.0544007,
+                            "lng": -118.2261121
+                        },
+                        "travel_mode": "WALKING"
+                    },
+                    {
+                        "distance": {
+                            "text": "0.1 km",
+                            "value": 115
+                        },
+                        "duration": {
+                            "text": "2 mins",
+                            "value": 115
+                        },
+                        "end_location": {
+                            "lat": 34.078025,
+                            "lng": -118.1935235
+                        },
+                        "html_instructions": "Continue onto <b>Huntington Dr</b>",
+                        "polyline": {
+                            "points": "_u~nEnxkpUIGIIFCBAQMIDIGUMi@Y[SGMWMI?"
+                        },
+                        "start_location": {
+                            "lat": 34.077119,
+                            "lng": -118.194161
+                        },
+                        "travel_mode": "WALKING"
+                    },
+                    {
+                        "distance": {
+                            "text": "0.2 km",
+                            "value": 153
+                        },
+                        "duration": {
+                            "text": "2 mins",
+                            "value": 125
+                        },
+                        "end_location": {
+                            "lat": 34.0789668,
+                            "lng": -118.192779
+                        },
+                        "html_instructions": "Turn <b>right</b> toward <b>Huntington Dr S</b>",
+                        "maneuver": "turn-right",
+                        "polyline": {
+                            "points": "sz~nEntkpUAECMGMIIEEIEKKIGEAO@AEMQOKMIUIIEKCECIA"
+                        },
+                        "start_location": {
+                            "lat": 34.078025,
+                            "lng": -118.1935235
+                        },
+                        "travel_mode": "WALKING"
+                    },
+                    {
+                        "distance": {
+                            "text": "2.3 km",
+                            "value": 2334
+                        },
+                        "duration": {
+                            "text": "33 mins",
+                            "value": 1988
+                        },
+                        "end_location": {
+                            "lat": 34.0885261,
+                            "lng": -118.1721721
+                        },
+                        "html_instructions": "Slight <b>right</b> onto <b>Huntington Dr S</b>",
+                        "maneuver": "turn-slight-right",
+                        "polyline": {
+                            "points": "q`_oEzokpUACMUEE][IGiAcAGGGEWUSSSQWUSSg@c@MMk@g@KICAOMIIOSm@k@OMUOUSOOeA}@IKc@a@s@m@mAiAEAWWE?MM]YGGsAkAOQGEOMa@_@UQEESQKQCCMMOQ]_@MQMUQ_@IUEMESE[AGCg@AUCY?MEs@?EA[?KEy@MuBCY?QAECm@AUCc@?CC_@CM?CAKCIKg@AGAKAO@I?G?EB]L{@@YBKBe@Jm@@]DG@MHm@BWBUBY@I@W@K?O@O?U?M?KEY?KAIC]EYCSEWCIAIGOI[Qi@K][}@EKAAI_@CKKWGS?A@?ACMa@ACEBCBEOIGIOEg@ISOa@KUOYQm@EEHEAEGSC?g@}AI]Oi@KWAGQ[Uu@Ia@Y_A?AACGS?@u@cCMYe@{AIWiAqDOYM]"
+                        },
+                        "start_location": {
+                            "lat": 34.0789668,
+                            "lng": -118.192779
+                        },
+                        "travel_mode": "WALKING"
+                    },
+                    {
+                        "distance": {
+                            "text": "17 m",
+                            "value": 17
+                        },
+                        "duration": {
+                            "text": "1 min",
+                            "value": 24
+                        },
+                        "end_location": {
+                            "lat": 34.0889128,
+                            "lng": -118.1724258
+                        },
+                        "html_instructions": "Turn <b>left</b> onto <b>Portola Ave</b>",
+                        "maneuver": "turn-left",
+                        "polyline": {
+                            "points": "i|`oE`ogpUgAn@CB"
+                        },
+                        "start_location": {
+                            "lat": 34.0885261,
+                            "lng": -118.1721721
+                        },
+                        "travel_mode": "WALKING"
+                    },
+                    {
+                        "distance": {
+                            "text": "75 m",
+                            "value": 75
+                        },
+                        "duration": {
+                            "text": "1 min",
+                            "value": 76
+                        },
+                        "end_location": {
+                            "lat": 34.0893394,
+                            "lng": -118.1713868
+                        },
+                        "html_instructions": "Turn <b>right</b> onto <b>Huntington Dr N</b>",
+                        "maneuver": "turn-right",
+                        "polyline": {
+                            "points": "u~`oEtpgpUEOOe@IYKYKYK]Qm@"
+                        },
+                        "start_location": {
+                            "lat": 34.0889128,
+                            "lng": -118.1724258
+                        },
+                        "travel_mode": "WALKING"
+                    },
+                    {
+                        "distance": {
+                            "text": "1.9 km",
+                            "value": 1920
+                        },
+                        "duration": {
+                            "text": "27 mins",
+                            "value": 1622
+                        },
+                        "end_location": {
+                            "lat": 34.0986802,
+                            "lng": -118.155492
+                        },
+                        "html_instructions": "Slight <b>left</b> to stay on <b>Huntington Dr N</b>",
+                        "maneuver": "turn-slight-left",
+                        "polyline": {
+                            "points": "kaaoEdjgpUGUACQi@EOC@ACKYAC?ADCTOCMEKOe@I]ACCKGUOe@CQC_@CUAGAYAo@Cs@GsBGeC?QCaAAe@CYC[AQCSAKGYCSEUI]GSMa@EMGQACCECEKSKSU_@IOQWe@y@S[o@gASYy@wAoAsBOYIOCCS]]i@QYWc@S[MUCCQ[EECCWe@OUEIS_@i@{@CGEGIOEKIUCES]AGEIEGCEW]g@y@KYQ?IQQ[AC_@i@CEIMq@iAEGu@oAS_@Ye@CEY_@k@cAa@s@MSGIYe@EGOSAAKMMMKMSSSQMIYQ[QQKYMQGQEMEIAKCSCGAYCK?IA]?WAE??@SGCA?GA?"
+                        },
+                        "start_location": {
+                            "lat": 34.0893394,
+                            "lng": -118.1713868
+                        },
+                        "travel_mode": "WALKING"
+                    },
+                    {
+                        "distance": {
+                            "text": "19 m",
+                            "value": 19
+                        },
+                        "duration": {
+                            "text": "1 min",
+                            "value": 27
+                        },
+                        "end_location": {
+                            "lat": 34.0986917,
+                            "lng": -118.1550851
+                        },
+                        "html_instructions": "Turn <b>right</b> onto <b>Alhambra Rd</b>",
+                        "maneuver": "turn-right",
+                        "polyline": {
+                            "points": "w{boExfdpUAiA?E"
+                        },
+                        "start_location": {
+                            "lat": 34.0986802,
+                            "lng": -118.155492
+                        },
+                        "travel_mode": "WALKING"
+                    },
+                    {
+                        "distance": {
+                            "text": "11.3 km",
+                            "value": 11286
+                        },
+                        "duration": {
+                            "text": "2 hours 35 mins",
+                            "value": 9312
+                        },
+                        "end_location": {
+                            "lat": 34.1311614,
+                            "lng": -118.0458289
+                        },
+                        "html_instructions": "Turn <b>left</b> onto <b>Huntington Dr</b><div style=\"font-size:0.9em\">Pass by Bank of America Financial Center (on the right in 5.5 km)</div>",
+                        "maneuver": "turn-left",
+                        "polyline": {
+                            "points": "y{boEhddpU_FEE?AAQ?C?aA?kCCGAU@k@AMAk@KYGc@MSGMGQIOGgAq@c@_@UU[][e@Q]Wc@Qa@[y@EKQs@G[@?ACGi@C@Ek@E_@AY?IASAY@[AO?sCC[BK?E?Y?S?U?W?_A?U?C?GEa@?QD]?K?wDCe@?mB?S?_A?G?E?i@A[?sA?Q?iCAO?]?uE?a@?uC?KAeA?G?G@??UA??QAeECe@?}AD_@A{@AU@IAYCk@MYAWG_@Ks@FUa@_BQg@MWg@cAKQe@aAKQc@_AKOISo@kAMWq@sAKUOYUc@MWCG?@We@@Ae@w@B?Yk@c@_AS_@g@eAy@}AKUWi@_@q@mA{BIMoA{BKYcAiBOSYk@A@O[Yc@eAmBIOAAQYm@eAIMmAyBMSGKWYKSKQBC?AS[CE@AIKIO]m@OUKOKQIOEGKQISCEGKQ]g@{@KQ}@}AA@U_@@AGMU_@MSOYKOS_@S[S_@OWGKo@gAKSUa@OSGIM?MUIYQYm@_ASe@]k@}@{Ao@eACCU_@S_@CEQ]]o@MQuAgCY[w@qAOWQ_@c@w@Og@Qa@KYM]CIEIKe@[iAK_@CE@?Mc@EQEMIYEUEQGQMe@EQCMCIEMEQKa@GQGWGQOo@Me@ACEOESGWGQGYK_@GQSw@IYAEGSMg@GSOg@EQOm@ISI[IWU{@CK@AGWCIA@gA}DG[k@uBEQEMKa@@[w@yCQq@GSM[EQMm@e@iBIWGWIWq@kCAEI]CGIYCEBAACOe@AEA@YcAIWESK_@GWK]GYK_@ACIa@A?}@iDOi@CKCGU}@GUa@_BQm@U}@IW_AmDEKGU_@yA?A?CIe@AEEB]qAQ]Qo@EWW_AIa@Qi@a@aBMc@Ss@Kc@ACQk@AIKWGWCMKe@Ia@EUBAAEIWA@CQOs@AGAE[}AEc@EQACYwAAEEQMk@G_@u@uDM_@Os@CU_@kB@AI]GYKi@EUKg@Os@D??GOs@C@EWESAAEUCSGYESeAiFGUAEEWCIGYGWAQYkAE[Sy@BAMk@EBu@{CGWISKi@ESSaAOy@Ki@C[Ga@M}@CM]{BEg@CQIo@G}@GeAQaCEYMoBGaACUC_@Gy@?COoCEg@AMAYSmCAQKyAAUQaCEg@AS?WEUKsAC[BAEk@A?AQGmAEYCe@CMEo@?QEmAE]@e@?GIiC@?EaA?CA?Ao@CYAQAWAk@AOGmBAUMwEOwEI{CCu@C]?K@[CwA?WAc@I_CAe@ASAY?KAI?MCs@E[C{@D?Ck@A?CgACWEy@BIA_@CIKcD?WEkAOeFCY@_@EgAA]?GIoCA_@AK?UC{@?MKuDASGWSeHKqD?[A_@?]?C?YAI?IAWA]?UCw@ACCACaAAYAYAi@AW?OA_@CcAAQ?U?G?Q?C?EAI?W?G?K@q@?Q@u@CWDI?EBiB@S?[@wABu@@s@?A?W@?@]?I?EDsBJmHB{@D]@OHq@Hy@@O?EB?@ED]?CC??C"
+                        },
+                        "start_location": {
+                            "lat": 34.0986917,
+                            "lng": -118.1550851
+                        },
+                        "travel_mode": "WALKING"
+                    },
+                    {
+                        "distance": {
+                            "text": "34 m",
+                            "value": 34
+                        },
+                        "duration": {
+                            "text": "1 min",
+                            "value": 41
+                        },
+                        "end_location": {
+                            "lat": 34.1314973,
+                            "lng": -118.0458379
+                        },
+                        "html_instructions": "Turn <b>left</b> onto <b>Holly Ave</b>",
+                        "maneuver": "turn-left",
+                        "polyline": {
+                            "points": "wfioElynoUc@A?@_@@"
+                        },
+                        "start_location": {
+                            "lat": 34.1311614,
+                            "lng": -118.0458289
+                        },
+                        "travel_mode": "WALKING"
+                    },
+                    {
+                        "distance": {
+                            "text": "1.0 km",
+                            "value": 965
+                        },
+                        "duration": {
+                            "text": "13 mins",
+                            "value": 790
+                        },
+                        "end_location": {
+                            "lat": 34.1368712,
+                            "lng": -118.0380668
+                        },
+                        "html_instructions": "Turn <b>right</b> onto <b>Huntington Dr</b>",
+                        "maneuver": "turn-right",
+                        "polyline": {
+                            "points": "{hioEnynoUAe@ASC[AUAQ?AGo@CWAEAWGm@EUGWC[a@aBESCKMWKQEMSk@CCWm@EIUe@Yg@Ua@IIOWg@m@OQW[a@a@QQQOQOWUIIUSIIIIcA}@[YMK][uAoAOY[[_@Og@e@USMQKIQMw@s@OYSQGG_@]IG"
+                        },
+                        "start_location": {
+                            "lat": 34.1314973,
+                            "lng": -118.0458379
+                        },
+                        "travel_mode": "WALKING"
+                    },
+                    {
+                        "distance": {
+                            "text": "0.4 km",
+                            "value": 366
+                        },
+                        "duration": {
+                            "text": "5 mins",
+                            "value": 307
+                        },
+                        "end_location": {
+                            "lat": 34.1392297,
+                            "lng": -118.0358737
+                        },
+                        "html_instructions": "Turn <b>right</b>",
+                        "maneuver": "turn-right",
+                        "polyline": {
+                            "points": "mjjoE|hmoU?G@OCKCGgC_C{@w@uAkA{@y@oAiAGGGAG?KDG?"
+                        },
+                        "start_location": {
+                            "lat": 34.1368712,
+                            "lng": -118.0380668
+                        },
+                        "travel_mode": "WALKING"
+                    },
+                    {
+                        "distance": {
+                            "text": "66 m",
+                            "value": 66
+                        },
+                        "duration": {
+                            "text": "1 min",
+                            "value": 57
+                        },
+                        "end_location": {
+                            "lat": 34.13974049999999,
+                            "lng": -118.0353631
+                        },
+                        "html_instructions": "Turn <b>right</b> onto <b>Huntington Dr</b><div style=\"font-size:0.9em\">Destination will be on the right</div>",
+                        "maneuver": "turn-right",
+                        "polyline": {
+                            "points": "eyjoEd{loUSW_@[OQa@_@"
+                        },
+                        "start_location": {
+                            "lat": 34.1392297,
+                            "lng": -118.0358737
+                        },
+                        "travel_mode": "WALKING"
+                    }
+                ],
+                "traffic_speed_entry": [],
+                "via_waypoint": []
+            }
+        ],
+        "overview_polyline": {
+            "points": "qyynE|mupUHMg@a@JSg@a@q@SQQeAeA_ByAg@q@_@Mc@]EUOAu@q@u@q@_@]eAiACFQQSQo@i@g@i@sCeCu@q@YWP]BEKK}@w@u@m@qAsALcAHe@Ru@Fe@ZeBLg@Bc@f@qC\\mBj@}Ch@qCXq@P_AZ_BNaAf@}B?a@p@yC\\{AtAeF`BcGdBcF{@mDk@mBkAuDq@kBWi@m@eBi@qAuA{FaBiHUq@a@q@gD_FwAuBMa@[QCOOUY]u@_AaC}CSQMSqA_By@eAAIKOq@iAMSCAQc@c@y@[a@_@y@g@y@gDqFg@i@DAi@y@gAgBcFiHiAeBy@gBe@mAEDIe@oAoDAHKSq@qB]}@_BkEu@yBc@mAaAeCe@uAa@y@a@eAYw@DM]c@]_Ae@e@mAqAaF{EYWu@g@uHuE{GgETk@YQWWaCwAeIwEcBaAg@[UODGSYEJIGIIFCMOIDIG_Ag@c@a@a@MESQWe@_@U?OW}@e@]M{@_AeEwD{CqCmFyE_DqCy@o@mE{Dm@u@k@q@_@u@[sAK_B_@yHSqDQaACm@f@aF`@sDDcAEiAKmAO_A}A_Fe@_BG?IKSWO{@}@_CEEHEIYeAeDu@qBe@gBkAoDiC_IM]gAn@IKq@sBg@eBWy@EAM_@ZSIY_@sA_@mBIgBa@}MOkA[{A}@yBsL_SiBwCgBgDiB{CKYQ?[m@o@aAeFqIuBcDaAaAuAy@kAa@q@KkBEWIAGAoAeFEyAAuEEwBc@cAa@kBqAq@s@m@cAi@eAa@eAYoAKk@MoBCyACoDBQ?{A?aBEs@Di@C_J?mACcJ?oNCmFCcCB{AEeBOq@SsAFUa@_B_@_AeBiDeEkIwHqOgEwHyBcEoCwEsCaFw@kABCS]Uc@kBcDgDyFmBiDuC_FM?MU[s@}CmFsBmD{CeF}BaE{@aCq@cCg@iBy@cDsB_IoDqMEYEGaCaJQo@@[w@yCYeASm@eAgEgAgEMa@?GUm@}A_GcBmGwDqNg@uBKk@EB]qAc@mA]wAkAqEmAoEUgAAWQm@o@_Dg@qC]cBwA_HmAmGIs@O{@IUGUWwAuA}GeAqFMk@EB}@sDo@sC}AqKkAsOgByXQgCQkCS}BIcDUaHo@ySQ{FCoDUkHIwA@k@OyC@i@OmDYcJQ}HEkBMiE[}HMkGAq@CkAE{@GcAGuBGeCAcBHwGJkGFaDVwKTaCDEDa@g@C_@@Ae@Eo@KyAOcBs@kDc@iAu@kBkAyBqAaB}A_B}DoDk@g@uAoAOY{@k@}@y@cB}Ac@k@g@e@IOA[}GkG{CmCSD[WqAmA"
+        },
+        "summary": "Huntington Dr",
+        "warnings": [
+            "Walking directions are in beta. Use caution \u2013 This route may be missing sidewalks or pedestrian paths."
+        ],
+        "waypoint_order": []
+    }
+]
