@@ -2,3 +2,6 @@
 .DS_Store
 
 /archief_data
+key.txt
+.env
+.env.*
