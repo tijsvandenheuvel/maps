@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>My Visits</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css" />
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<div id="signin-screen">
+	<div id="signin-box">
+		<h1>My Visits</h1>
+		<p>Sign in to log and view the places you've visited on your travels.</p>
+		<button id="signin-btn">Sign in with Google</button>
+		<p id="signin-error" class="error"></p>
+	</div>
+</div>
+
+<div id="app" class="hidden">
+	<div id="map"></div>
+
+	<button id="add-btn" title="Add a visit">+</button>
+
+	<div id="list-panel">
+		<div id="list-handle"></div>
+		<div id="list-header">
+			<span id="list-title">Your visits</span>
+			<button id="signout-btn">Sign out</button>
+		</div>
+		<div id="list-content"></div>
+	</div>
+
+	<div id="add-overlay" class="hidden">
+		<div id="add-form">
+			<h2>New visit</h2>
+			<label>Place / name
+				<input type="text" id="visit-name" placeholder="e.g. Café de la Place" autocomplete="off">
+			</label>
+			<label>Notes
+				<textarea id="visit-note" placeholder="Anything worth remembering?" rows="3"></textarea>
+			</label>
+			<label>Date
+				<input type="date" id="visit-date">
+			</label>
+			<p id="location-status">Getting your location...</p>
+			<div id="add-form-buttons">
+				<button id="cancel-btn" type="button">Cancel</button>
+				<button id="save-btn" type="button" disabled>Save visit</button>
+			</div>
+			<p id="save-error" class="error"></p>
+		</div>
+	</div>
+</div>
+
+<script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"></script>
+<script type="module" src="app.js"></script>
+</body>
+</html>
