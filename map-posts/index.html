@@ -41,6 +41,17 @@
 	</main>
 
 	<main id="view-list" class="view hidden">
+		<div class="list-toolbar">
+			<label class="group-by-label">
+				Group by
+				<select id="group-by-select">
+					<option value="none">None</option>
+					<option value="day">Day</option>
+					<option value="year">Year</option>
+					<option value="area">Area</option>
+				</select>
+			</label>
+		</div>
 		<div id="list-empty" class="list-empty hidden">
 			<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2C7.6 2 4 5.6 4 10c0 6 8 12 8 12s8-6 8-12c0-4.4-3.6-8-8-8zm0 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/></svg>
 			<p>No posts yet</p>
@@ -56,6 +67,14 @@
 		<label>
 			Title
 			<input type="text" id="post-title" placeholder="What's happening here?" maxlength="60" />
+		</label>
+		<label>
+			Date &amp; time
+			<input type="datetime-local" id="post-date" />
+		</label>
+		<label>
+			Area <span class="optional">(optional)</span>
+			<input type="text" id="post-area" placeholder="e.g. Ardennes, Brussels" maxlength="40" />
 		</label>
 		<label>
 			Story

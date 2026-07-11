@@ -16,6 +16,8 @@ const overlay = document.getElementById("overlay");
 const formEl = document.getElementById("post-form");
 const formTitleEl = document.getElementById("form-title");
 const titleInput = document.getElementById("post-title");
+const dateInput = document.getElementById("post-date");
+const areaInput = document.getElementById("post-area");
 const textInput = document.getElementById("post-text");
 const photoInput = document.getElementById("post-photo");
 const photoStatus = document.getElementById("photo-status");
@@ -32,13 +34,17 @@ const viewMap = document.getElementById("view-map");
 const viewList = document.getElementById("view-list");
 const listEl = document.getElementById("post-list");
 const listEmptyEl = document.getElementById("list-empty");
+const groupBySelect = document.getElementById("group-by-select");
 const toastEl = document.getElementById("toast");
+
+const GROUP_BY_KEY = "map-posts-group-by";
 
 let formMode = "create";
 let editingId = null;
 let pendingLatLng = null;
 let pendingPhotoData = null;
 let photoRemoved = false;
+let listGroupBy = localStorage.getItem(GROUP_BY_KEY) || "day";
 const markerById = new Map();
 
 const demoPosts = [
@@ -47,6 +53,7 @@ const demoPosts = [
 		lat: 50.8466,
 		lng: 4.3528,
 		title: "Grand Place",
+		area: "Brussels",
 		text: "First stop of the trip - the square is even more impressive in person.",
 		photo:
 			"data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI2NDAiIGhlaWdodD0iNDIwIiB2aWV3Qm94PSIwIDAgNjQwIDQyMCI+CiAgPGRlZnM+CiAgICA8bGluZWFyR3JhZGllbnQgaWQ9ImciIHgxPSIwIiB5MT0iMCIgeDI9IjEiIHkyPSIxIj4KICAgICAgPHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjZjdiNzMzIi8+CiAgICAgIDxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iI2I1NDcxYiIvPgogICAgPC9saW5lYXJHcmFkaWVudD4KICA8L2RlZnM+CiAgPHJlY3Qgd2lkdGg9IjY0MCIgaGVpZ2h0PSI0MjAiIGZpbGw9InVybCgjZykiLz4KICA8ZyBmaWxsPSJub25lIiBzdHJva2U9IiNmZmYiIHN0cm9rZS13aWR0aD0iMyIgb3BhY2l0eT0iMC41NSI+CiAgICA8cGF0aCBkPSJNMTIwIDM0MCBMMTIwIDIwMCBMMTUwIDE2MCBMMTgwIDIwMCBMMTgwIDM0MCBaIi8+CiAgICA8cGF0aCBkPSJNMjIwIDM0MCBMMjIwIDE4MCBMMjYwIDE0MCBMMzAwIDE4MCBMMzAwIDM0MCBaIi8+CiAgICA8cGF0aCBkPSJNMzQwIDM0MCBMMzQwIDIxMCBMMzcwIDE3NSBMNDAwIDIxMCBMNDAwIDM0MCBaIi8+CiAgICA8cGF0aCBkPSJNNDQwIDM0MCBMNDQwIDE2MCBMNDgwIDExMCBMNTIwIDE2MCBMNTIwIDM0MCBaIi8+CiAgPC9nPgogIDx0ZXh0IHg9IjMyMCIgeT0iMzgwIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LWZhbWlseT0iR2VvcmdpYSwgc2VyaWYiIGZvbnQtc2l6ZT0iMzAiIGZpbGw9IiNmZmYiIG9wYWNpdHk9IjAuOSI+R3JhbmQgUGxhY2U8L3RleHQ+Cjwvc3ZnPgo=",
@@ -57,6 +64,7 @@ const demoPosts = [
 		lat: 50.8548,
 		lng: 4.3776,
 		title: "Cinquantenaire Park",
+		area: "Brussels",
 		text: "Picnic lunch under the arch. Perfect weather today.",
 		photo:
 			"data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI2NDAiIGhlaWdodD0iNDIwIiB2aWV3Qm94PSIwIDAgNjQwIDQyMCI+CiAgPGRlZnM+CiAgICA8bGluZWFyR3JhZGllbnQgaWQ9ImcyIiB4MT0iMCIgeTE9IjAiIHgyPSIxIiB5Mj0iMSI+CiAgICAgIDxzdG9wIG9mZnNldD0iMCIgc3RvcC1jb2xvcj0iIzJmOGY1YiIvPgogICAgICA8c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiMwZjRjODEiLz4KICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgPC9kZWZzPgogIDxyZWN0IHdpZHRoPSI2NDAiIGhlaWdodD0iNDIwIiBmaWxsPSJ1cmwoI2cyKSIvPgogIDxnIGZpbGw9Im5vbmUiIHN0cm9rZT0iI2ZmZiIgc3Ryb2tlLXdpZHRoPSI0IiBvcGFjaXR5PSIwLjYiPgogICAgPHBhdGggZD0iTTIyMCAzNDAgTDIyMCAxNjAgUTMyMCA5MCA0MjAgMTYwIEw0MjAgMzQwIiAvPgogICAgPGxpbmUgeDE9IjE4MCIgeTE9IjM0MCIgeDI9IjQ2MCIgeTI9IjM0MCIvPgogIDwvZz4KICA8dGV4dCB4PSIzMjAiIHk9IjM4MCIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZm9udC1mYW1pbHk9Ikdlb3JnaWEsIHNlcmlmIiBmb250LXNpemU9IjI4IiBmaWxsPSIjZmZmIiBvcGFjaXR5PSIwLjkiPkNpbnF1YW50ZW5haXJlIFBhcms8L3RleHQ+Cjwvc3ZnPgo=",
@@ -88,7 +96,7 @@ let posts = loadPosts();
 
 // ---- CRUD ----
 
-function createPost({ lat, lng, title, text, photo }) {
+function createPost({ lat, lng, title, text, photo, eventDate, area }) {
 	const post = {
 		id: `post-${Date.now()}`,
 		lat,
@@ -96,6 +104,8 @@ function createPost({ lat, lng, title, text, photo }) {
 		title,
 		text,
 		photo: photo || null,
+		area: area || "",
+		eventDate: eventDate ?? Date.now(),
 		createdAt: Date.now(),
 		updatedAt: Date.now(),
 	};
@@ -179,7 +189,11 @@ function compressImage(file, maxDim = MAX_PHOTO_DIM, quality = PHOTO_QUALITY) {
 	});
 }
 
-// ---- Rendering ----
+// ---- Dates ----
+
+function getEventTime(post) {
+	return post.eventDate || post.createdAt;
+}
 
 function formatDate(ts) {
 	return new Date(ts).toLocaleString(undefined, {
@@ -189,6 +203,36 @@ function formatDate(ts) {
 		minute: "2-digit",
 	});
 }
+
+function toDatetimeLocalValue(ts) {
+	const d = new Date(ts);
+	const pad = (n) => String(n).padStart(2, "0");
+	return `${d.getFullYear()}-${pad(d.getMonth() + 1)}-${pad(d.getDate())}T${pad(d.getHours())}:${pad(d.getMinutes())}`;
+}
+
+function fromDatetimeLocalValue(value) {
+	const ts = new Date(value).getTime();
+	return Number.isNaN(ts) ? null : ts;
+}
+
+function groupKeyDay(post) {
+	return new Date(getEventTime(post)).toLocaleDateString(undefined, {
+		weekday: "short",
+		month: "short",
+		day: "numeric",
+		year: "numeric",
+	});
+}
+
+function groupKeyYear(post) {
+	return String(new Date(getEventTime(post)).getFullYear());
+}
+
+function groupKeyArea(post) {
+	return post.area && post.area.trim() ? post.area.trim() : "Unspecified area";
+}
+
+// ---- Rendering ----
 
 function escapeHtml(str) {
 	const el = document.createElement("div");
@@ -221,7 +265,8 @@ function buildPopupContent(post) {
 		${post.photo ? `<img src="${post.photo}" alt="${escapeHtml(post.title || "photo")}" />` : ""}
 		${post.title ? `<h3>${escapeHtml(post.title)}</h3>` : ""}
 		${post.text ? `<p>${escapeHtml(post.text)}</p>` : ""}
-		<div class="meta">${formatDate(post.createdAt)}</div>
+		<div class="meta">${formatDate(getEventTime(post))}${post.area ? ` · ${escapeHtml(post.area)}` : ""}</div>
+		<p class="drag-hint">Tip: drag this pin to move it</p>
 		<div class="popup-actions">
 			<button class="edit-link">Edit</button>
 			<button class="delete-link">Delete</button>
@@ -237,7 +282,7 @@ function buildPopupContent(post) {
 function addMarker(post) {
 	const marker = L.marker([post.lat, post.lng], {
 		icon: buildIcon(post.photo),
-		draggable: true,
+		draggable: false,
 	})
 		.addTo(map)
 		.bindPopup(buildPopupContent(post), {
@@ -246,6 +291,10 @@ function addMarker(post) {
 			maxHeight: Math.round(window.innerHeight * 0.6),
 			autoPanPadding: [16, 16],
 		});
+	// Only draggable while its popup is open, i.e. while you're actively
+	// looking at that post — not while just panning around the map.
+	marker.on("popupopen", () => marker.dragging.enable());
+	marker.on("popupclose", () => marker.dragging.disable());
 	marker.on("dragend", (e) => {
 		const { lat, lng } = e.target.getLatLng();
 		moveLocation(post.id, lat, lng);
@@ -276,7 +325,7 @@ function buildListItem(post) {
 	body.innerHTML = `
 		<h3>${escapeHtml(post.title || "Untitled post")}</h3>
 		${post.text ? `<p>${escapeHtml(post.text)}</p>` : ""}
-		<div class="post-meta">${formatDate(post.createdAt)}</div>
+		<div class="post-meta">${formatDate(getEventTime(post))}${post.area ? ` · ${escapeHtml(post.area)}` : ""}</div>
 	`;
 	body.addEventListener("click", () => showOnMap(post));
 
@@ -295,6 +344,12 @@ function buildListItem(post) {
 	return li;
 }
 
+const GROUP_KEY_FNS = {
+	day: groupKeyDay,
+	year: groupKeyYear,
+	area: groupKeyArea,
+};
+
 function renderList() {
 	listEl.innerHTML = "";
 	if (posts.length === 0) {
@@ -302,8 +357,27 @@ function renderList() {
 		return;
 	}
 	listEmptyEl.classList.add("hidden");
-	const sorted = posts.slice().sort((a, b) => b.createdAt - a.createdAt);
-	sorted.forEach((post) => listEl.appendChild(buildListItem(post)));
+	const sorted = posts.slice().sort((a, b) => getEventTime(b) - getEventTime(a));
+
+	const keyFn = GROUP_KEY_FNS[listGroupBy];
+	if (!keyFn) {
+		sorted.forEach((post) => listEl.appendChild(buildListItem(post)));
+		return;
+	}
+
+	const groups = new Map();
+	sorted.forEach((post) => {
+		const key = keyFn(post);
+		if (!groups.has(key)) groups.set(key, []);
+		groups.get(key).push(post);
+	});
+	groups.forEach((items, key) => {
+		const header = document.createElement("li");
+		header.className = "list-group-header";
+		header.textContent = `${key} · ${items.length}`;
+		listEl.appendChild(header);
+		items.forEach((post) => listEl.appendChild(buildListItem(post)));
+	});
 }
 
 function showOnMap(post) {
@@ -337,6 +411,17 @@ function setView(view) {
 
 tabMap.addEventListener("click", () => setView("map"));
 tabList.addEventListener("click", () => setView("list"));
+
+groupBySelect.value = listGroupBy;
+groupBySelect.addEventListener("change", () => {
+	listGroupBy = groupBySelect.value;
+	try {
+		localStorage.setItem(GROUP_BY_KEY, listGroupBy);
+	} catch (e) {
+		// non-essential preference; ignore if storage is unavailable
+	}
+	renderList();
+});
 
 // ---- Toast ----
 
@@ -375,7 +460,9 @@ function openForm(mode, data) {
 		formTitleEl.textContent = "New post";
 		saveBtn.textContent = "Post to map";
 		titleInput.value = "";
+		areaInput.value = "";
 		textInput.value = "";
+		dateInput.value = toDatetimeLocalValue(Date.now());
 		hidePhotoPreview();
 	} else {
 		editingId = data.id;
@@ -383,14 +470,21 @@ function openForm(mode, data) {
 		formTitleEl.textContent = "Edit post";
 		saveBtn.textContent = "Save changes";
 		titleInput.value = data.title || "";
+		areaInput.value = data.area || "";
 		textInput.value = data.text || "";
+		dateInput.value = toDatetimeLocalValue(getEventTime(data));
 		if (data.photo) showPhotoPreview(data.photo);
 		else hidePhotoPreview();
 	}
 
 	overlay.classList.remove("hidden");
 	formEl.classList.remove("hidden");
-	titleInput.focus();
+
+	// Only auto-focus (and pop the mobile keyboard) for a brand-new post.
+	// In edit mode the user should see the filled-in form before typing.
+	if (mode === "create") {
+		titleInput.focus();
+	}
 }
 
 function closeForm() {
@@ -440,6 +534,8 @@ overlay.addEventListener("click", closeForm);
 saveBtn.addEventListener("click", () => {
 	const title = titleInput.value.trim();
 	const text = textInput.value.trim();
+	const area = areaInput.value.trim();
+	const eventDate = fromDatetimeLocalValue(dateInput.value);
 
 	if (formMode === "create") {
 		if (!pendingLatLng) return;
@@ -452,6 +548,8 @@ saveBtn.addEventListener("click", () => {
 			lng: pendingLatLng.lng,
 			title,
 			text,
+			area,
+			eventDate,
 			photo: pendingPhotoData,
 		});
 		if (post) {
@@ -461,7 +559,13 @@ saveBtn.addEventListener("click", () => {
 			if (marker) marker.openPopup();
 		}
 	} else {
-		const patch = { title, text };
+		const original = posts.find((p) => p.id === editingId);
+		const patch = {
+			title,
+			text,
+			area,
+			eventDate: eventDate ?? (original ? getEventTime(original) : Date.now()),
+		};
 		if (photoRemoved) patch.photo = null;
 		else if (pendingPhotoData) patch.photo = pendingPhotoData;
 		const updated = updatePost(editingId, patch);
