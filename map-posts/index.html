@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<title>Map Posts</title>
+
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.css" />
+	<script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.js"></script>
+
+	<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+	<div id="map"></div>
+
+	<div id="hint" class="hint">Tap anywhere on the map to add a post</div>
+
+	<button id="locate-btn" title="Use my location">📍</button>
+
+	<!-- New post form -->
+	<div id="overlay" class="overlay hidden"></div>
+	<div id="post-form" class="post-form hidden">
+		<h2>New post</h2>
+		<label>
+			Title
+			<input type="text" id="post-title" placeholder="What's happening here?" maxlength="60" />
+		</label>
+		<label>
+			Story
+			<textarea id="post-text" placeholder="Say a bit more..." maxlength="500"></textarea>
+		</label>
+		<label class="photo-label">
+			Photo
+			<input type="file" id="post-photo" accept="image/*" capture="environment" />
+		</label>
+		<img id="photo-preview" class="photo-preview hidden" alt="preview" />
+		<div class="form-actions">
+			<button id="cancel-btn" class="btn btn-secondary">Cancel</button>
+			<button id="save-btn" class="btn btn-primary">Post to map</button>
+		</div>
+	</div>
+
+	<script src="script.js"></script>
+</body>
+</html>
