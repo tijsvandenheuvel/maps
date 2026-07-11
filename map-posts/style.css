@@ -169,7 +169,7 @@ html, body {
 }
 
 .popup-card {
-	width: 220px;
+	width: min(220px, calc(100vw - 88px));
 }
 
 .popup-card img {
@@ -203,7 +203,29 @@ html, body {
 	border: none;
 	background: none;
 	color: #dc2626;
-	font-size: 12px;
+	font-size: 13px;
 	cursor: pointer;
-	padding: 0;
+	padding: 6px 0;
+}
+
+/* Leaflet popup chrome: fit small screens, bigger touch targets */
+.leaflet-popup-content-wrapper {
+	border-radius: 12px;
+}
+
+.leaflet-popup-content {
+	margin: 12px 14px;
+}
+
+.leaflet-popup-close-button {
+	width: 30px !important;
+	height: 30px !important;
+	font-size: 20px !important;
+	line-height: 30px !important;
+}
+
+@media (max-width: 380px) {
+	.popup-card img {
+		max-height: 110px;
+	}
 }

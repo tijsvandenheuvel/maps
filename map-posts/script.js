@@ -6,6 +6,7 @@ L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
 	attribution:
 		'&copy; <a href="https://openstreetmap.org">OpenStreetMap</a> contributors',
 	maxZoom: 19,
+	errorTileUrl: "tile-fallback.svg",
 }).addTo(map);
 
 const hint = document.getElementById("hint");
@@ -106,7 +107,12 @@ function escapeHtml(str) {
 function addMarker(post) {
 	const marker = L.marker([post.lat, post.lng], { icon: buildIcon(post.photo) })
 		.addTo(map)
-		.bindPopup(buildPopupContent(post));
+		.bindPopup(buildPopupContent(post), {
+			maxWidth: 240,
+			minWidth: 180,
+			maxHeight: Math.round(window.innerHeight * 0.6),
+			autoPanPadding: [16, 16],
+		});
 	markerById.set(post.id, marker);
 }
 
