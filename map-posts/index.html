@@ -5,22 +5,54 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 	<title>Map Posts</title>
 
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link
+		href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+		rel="stylesheet"
+	/>
+
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.css" />
 	<script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.js"></script>
 
 	<link rel="stylesheet" href="style.css" />
 </head>
 <body>
-	<div id="map"></div>
+	<header class="app-bar">
+		<div class="brand">
+			<svg class="brand-mark" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2C7.6 2 4 5.6 4 10c0 6 8 12 8 12s8-6 8-12c0-4.4-3.6-8-8-8zm0 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/></svg>
+			<span class="brand-name">Map Posts</span>
+		</div>
+		<div class="view-toggle" role="tablist">
+			<button class="view-toggle-btn active" id="tab-map" role="tab" aria-selected="true">Map</button>
+			<button class="view-toggle-btn" id="tab-list" role="tab" aria-selected="false">List</button>
+		</div>
+	</header>
 
-	<div id="hint" class="hint">Tap anywhere on the map to add a post</div>
+	<main id="view-map" class="view">
+		<div id="map"></div>
+		<div id="hint" class="hint">Tap anywhere on the map to add a post</div>
+		<div class="fab-stack">
+			<button id="locate-btn" class="fab fab-secondary" title="Center on my location">
+				<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="7"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3"/></svg>
+			</button>
+			<button id="add-btn" class="fab fab-primary" title="Add a post">+</button>
+		</div>
+	</main>
 
-	<button id="locate-btn" title="Use my location">📍</button>
+	<main id="view-list" class="view hidden">
+		<div id="list-empty" class="list-empty hidden">
+			<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2C7.6 2 4 5.6 4 10c0 6 8 12 8 12s8-6 8-12c0-4.4-3.6-8-8-8zm0 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/></svg>
+			<p>No posts yet</p>
+			<p class="list-empty-sub">Switch to Map and tap anywhere to drop your first pin.</p>
+		</div>
+		<ul id="post-list" class="post-list"></ul>
+	</main>
 
-	<!-- New post form -->
+	<!-- Post form: used for both create and edit -->
 	<div id="overlay" class="overlay hidden"></div>
-	<div id="post-form" class="post-form hidden">
-		<h2>New post</h2>
+	<div id="post-form" class="post-form hidden" role="dialog" aria-modal="true" aria-labelledby="form-title">
+		<h2 id="form-title">New post</h2>
 		<label>
 			Title
 			<input type="text" id="post-title" placeholder="What's happening here?" maxlength="60" />
@@ -31,14 +63,20 @@
 		</label>
 		<label class="photo-label">
 			Photo
-			<input type="file" id="post-photo" accept="image/*" capture="environment" />
+			<input type="file" id="post-photo" accept="image/*" />
 		</label>
-		<img id="photo-preview" class="photo-preview hidden" alt="preview" />
+		<p id="photo-status" class="photo-status hidden">Processing photo…</p>
+		<div class="photo-preview-wrap hidden" id="photo-preview-wrap">
+			<img id="photo-preview" class="photo-preview" alt="preview" />
+			<button type="button" id="remove-photo-btn" class="remove-photo-btn" title="Remove photo">×</button>
+		</div>
 		<div class="form-actions">
 			<button id="cancel-btn" class="btn btn-secondary">Cancel</button>
 			<button id="save-btn" class="btn btn-primary">Post to map</button>
 		</div>
 	</div>
+
+	<div id="toast" class="toast"></div>
 
 	<script src="script.js"></script>
 </body>
